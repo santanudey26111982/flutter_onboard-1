@@ -16,10 +16,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: appColor.primaryColor),
         textTheme: const TextTheme(
-            bodySmall: TextStyle(fontFamily: 'Poppins'),
-            bodyMedium: TextStyle(fontFamily: 'Poppins'),
-            bodyLarge: TextStyle(fontFamily: 'Poppins'),
-            displayLarge: TextStyle(fontFamily: 'Poppins')),
+          bodySmall: TextStyle(fontFamily: 'Poppins'),
+          bodyMedium: TextStyle(fontFamily: 'Poppins'),
+          bodyLarge: TextStyle(fontFamily: 'Poppins'),
+          displayLarge: TextStyle(fontFamily: 'Poppins'),
+        ),
         useMaterial3: true,
       ),
       initialRoute:

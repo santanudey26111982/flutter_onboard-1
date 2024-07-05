@@ -6,6 +6,7 @@ class AppColors {
   Color get textGreyColor => const Color(0xff797979);
   Color get gray_100 => Colors.grey[500]!;
   Color get paragraphColor => const Color(0xff18587A);
+  Color get blueColorOne => const Color(0xff2175D4);
 }
 
 AppColors get appColor => AppColors();

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:onboarding_flutter_app/screens/onboarding_screen.dart/onboarding_screen.dart';
 import 'package:onboarding_flutter_app/screens/splash/splash_screen.dart';
-import 'package:onboarding_flutter_app/screens/welcome_scree.dart';
+import 'package:onboarding_flutter_app/screens/welcome_screen.dart';
 
 class AppRoutes {
 //from this route class we will manage all navigation direction in our app

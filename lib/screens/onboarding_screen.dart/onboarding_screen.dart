@@ -46,18 +46,19 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           children: [
             Expanded(
               child: PageView.builder(
-                  itemCount: KDummyData.onBoardItemList.length,
-                  physics: const NeverScrollableScrollPhysics(),
-                  controller: controller,
-                  onPageChanged: (v) {
-                    setState(() {
-                      selectedIndex = v;
-                    });
-                  },
-                  itemBuilder: (context, index) {
-                    return ContentTemplate(
-                        item: KDummyData.onBoardItemList[index]);
-                  }),
+                itemCount: KDummyData.onBoardItemList.length,
+                physics: const NeverScrollableScrollPhysics(),
+                controller: controller,
+                onPageChanged: (v) {
+                  setState(() {
+                    selectedIndex = v;
+                  });
+                },
+                itemBuilder: (context, index) {
+                  return ContentTemplate(
+                      item: KDummyData.onBoardItemList[index]);
+                },
+              ),
             ),
             Row(
               children: [
@@ -94,21 +95,22 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   },
                   child: CircleAvatar(
                     radius: 35,
-                    backgroundColor: appColor.primaryColor,
+                    backgroundColor: appColor.blueColorOne,
                     child:
                         selectedIndex != KDummyData.onBoardItemList.length - 1
                             ? const Icon(
                                 Icons.arrow_forward,
                                 size: 30,
-                                color: Colors.black,
+                                color: Colors.white,
                               )
                             : Text(
-                                "Start",
+                                "Go".toUpperCase(),
                                 style: Theme.of(context)
                                     .textTheme
-                                    .titleMedium!
+                                    .titleLarge!
                                     .copyWith(
                                       fontWeight: FontWeight.bold,
+                                      color: Colors.white,
                                     ),
                               ),
                   ),
